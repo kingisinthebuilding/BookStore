@@ -1,0 +1,78 @@
+<section class="vh-100">
+    <div class="container-fluid h-custom">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-md-9 col-lg-6 col-xl-5">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+                    class="img-fluid" alt="Sample image">
+            </div>
+            <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+                <form [formGroup]="registerForm">
+
+                    <div class="divider d-flex align-items-center my-4">
+                        <p class="text-center fw-bold mx-3 mb-0">Register Form</p>
+                    </div>
+
+                    <!-- Username input -->
+                    <label class="form-label" for="username">Name</label>
+                    <div data-mdb-input-init class="form-outline mb-4">
+                        <input type="text" id="username" formControlName="username" class="form-control form-control-lg"
+                            placeholder="Enter a name" />
+                        <mat-error
+                            *ngIf="registerForm.get('username')?.invalid && registerForm.get('username')?.touched">
+                            Username is required
+                        </mat-error>
+                    </div>
+
+                    <!-- Password input -->
+                    <label class="form-label" for="password">Password</label>
+                    <div data-mdb-input-init class="form-outline mb-4">
+                        <input type="password" id="password" formControlName="password"
+                            class="form-control form-control-lg" placeholder="Enter a password" />
+                        <mat-error
+                            *ngIf="registerForm.get('password')?.invalid && registerForm.get('password')?.touched">
+                            <small *ngIf="registerForm.get('password')?.errors?.['required']">Password is
+                                required</small>
+                            <small *ngIf="registerForm.get('password')?.errors?.['minlength']">Password must be at least
+                                15 characters long</small>
+                        </mat-error>
+                    </div>
+
+                    <!-- Email input -->
+                    <label class="form-label" for="email">Email address</label>
+                    <div data-mdb-input-init class="form-outline mb-4">
+                        <input type="email" id="email" formControlName="email" class="form-control form-control-lg"
+                            placeholder="Enter a valid email address" />
+                        <mat-error *ngIf="registerForm.get('email')?.invalid && registerForm.get('email')?.touched">
+                            <small *ngIf="registerForm.get('email')?.errors?.['required']">Email is required</small>
+                            <small *ngIf="registerForm.get('email')?.errors?.['email']">Invalid email format</small>
+                        </mat-error>
+                    </div>
+
+                    <!-- Mobile No input -->
+                    <label class="form-label" for="mobileNo">Mobile No</label>
+                    <div data-mdb-input-init class="form-outline mb-3">
+                        <input type="text" id="mobileNo" formControlName="mobileNo" class="form-control form-control-lg"
+                            placeholder="Enter Mobile No" />
+                        <mat-error
+                            *ngIf="registerForm.get('mobileNo')?.invalid && registerForm.get('mobileNo')?.touched">
+                            <small *ngIf="registerForm.get('mobileNo')?.errors?.['required']">Mobile No is
+                                required</small>
+                            <small *ngIf="registerForm.get('mobileNo')?.errors?.['minlength']">Mobile No must be 10
+                                digits long</small>
+                            <small *ngIf="registerForm.get('mobileNo')?.errors?.['maxlength']">Mobile No must be 10
+                                digits long</small>
+                        </mat-error>
+                    </div>
+
+                    <div class="text-center text-lg-start mt-4 pt-2">
+                        <button type="button" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-lg"
+                            style="padding-left: 2.5rem; padding-right: 2.5rem;" [disabled]="registerForm.invalid"
+                            (click)="register(registerForm.value)">Register</button>
+                        <p class="small fw-bold mt-2 pt-1 mb-0">Have an account? <a href="/login"
+                                class="link-danger">Login Here</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

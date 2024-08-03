@@ -1,0 +1,40 @@
+:host {
+    display: block;
+    padding: 20px;
+  }
+  
+  mat-dialog-actions {
+    justify-content: flex-end;
+  }
+  
+  mat-dialog-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ff5722; /* Custom color */
+    text-align: center;
+  }
+  
+  mat-dialog-actions button {
+    margin: 0 10px;
+    padding: 10px 20px;
+  }
+  
+  button[mat-button] {
+    background-color: #ff5722; /* Custom color */
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[mat-button]:hover {
+    background-color: #e64a19; /* Custom hover color */
+  }
+  
+  button[mat-button]:first-child {
+    background-color: #757575; /* Custom color for No button */
+  }
+  
+  button[mat-button]:first-child:hover {
+    background-color: #616161; /* Custom hover color for No button */
+  }
+  

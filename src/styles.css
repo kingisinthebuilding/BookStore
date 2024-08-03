@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+::ng-deep snack-bar-container.snackbarFailed{
+    background: whitesmoke !important;
+    color: red !important;
+    text-align: center;
+    font-weight: 600;
+}

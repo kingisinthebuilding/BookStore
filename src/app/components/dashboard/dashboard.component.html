@@ -1,0 +1,6 @@
+<app-navbar></app-navbar><br><br><br><br><br>   
+<app-home *ngIf="isHomeRoute"></app-home>
+<app-maintainence *ngIf="ismaintainRoute"></app-maintainence>
+<div class="book-list" *ngIf="isbookRoute">
+    <app-book *ngFor="let book of books" [book]="book"></app-book>
+</div>

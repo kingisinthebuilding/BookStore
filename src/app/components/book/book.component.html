@@ -1,0 +1,10 @@
+<div style="display: flex; flex-wrap: wrap; justify-content: center;">
+    <div class="book-card">
+        <img [src]="book.imageUrl" alt="{{ book.title }}" class="book-image">
+        <div class="book-details">
+            <h3>{{ book.title }}</h3>
+            <p>Author: {{ book.author }}</p>
+            <p>Price: ${{ book.price.toFixed(2) }}</p>
+        </div>
+    </div>
+</div>

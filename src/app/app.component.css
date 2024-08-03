@@ -1,0 +1,12 @@
+::ng-deep snack-bar-container.snackbarSUCCESS{
+    background: honeydew !important;
+    color: green !important;
+    text-align: center;
+    font-weight: 500;
+}
+::ng-deep snack-bar-container.snackbarFailed{
+    background: whitesmoke !important;
+    color: red !important;
+    text-align: center;
+    font-weight: 500;
+} 
