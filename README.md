@@ -43,7 +43,7 @@ Angular Material
 This project is licensed under the MIT License - see the LICENSE.md file for details.
 
 ##Contact
-If you have any questions or suggestions, feel free to reach out to me at your-siddheshgupta596@gmail.com.
+If you have any questions or suggestions, feel free to reach out to me at siddheshgupta596@gmail.com.
 
 ##Further help
 To get more help on the Angular CLI use ng help or go check out the Angular CLI Overview and Command Reference page.
