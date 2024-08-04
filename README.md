@@ -12,20 +12,6 @@ Add books to the shopping cart
 User authentication and authorization
 Admin panel for managing books and orders
 Responsive design with Angular Material
-##Installation
-Clone the repository:
-
-bash
-Copy code
-git clone https://github.com/yourusername/bookstore.git
-cd bookstore
-Install dependencies:
-
-bash
-Copy code
-npm install
-Development server
-Run ng serve for a dev server. Navigate to http://localhost:4200/. The application will automatically reload if you change any of the source files.
 
 ##Code scaffolding
 Run ng generate component component-name to generate a new component. You can also use ng generate directive|pipe|service|class|guard|interface|enum|module.
